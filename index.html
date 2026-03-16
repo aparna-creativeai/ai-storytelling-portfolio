@@ -1,39 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>AI Storytelling Studio</title>
+
+<title>Aparna Creative AI</title>
 
 <style>
 
 body{
-font-family: Arial, sans-serif;
-background:#0f0f0f;
-color:white;
 margin:0;
+font-family:Arial;
+background:#0b0b0b;
+color:white;
 }
 
-header{
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:100px 20px;
-background:black;
+background:linear-gradient(to bottom,#000,#111);
 }
 
-h1{
-font-size:50px;
-margin-bottom:10px;
+.hero h1{
+font-size:60px;
+letter-spacing:2px;
+}
+
+.hero p{
+font-size:20px;
+opacity:0.8;
 }
 
 section{
-padding:60px;
-max-width:900px;
+padding:80px 20px;
+max-width:1000px;
 margin:auto;
 }
 
-.project{
-border:1px solid #333;
-padding:20px;
-margin-bottom:30px;
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#141414;
+padding:25px;
 border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+background:#1c1c1c;
+}
+
+footer{
+text-align:center;
+padding:40px;
+opacity:0.7;
 }
 
 </style>
@@ -42,45 +69,65 @@ border-radius:10px;
 
 <body>
 
-<header>
+<div class="hero">
+
 <h1>Aparna Creative AI</h1>
-<p>AI Visual Storytelling • Experimental Advertising • Cinematic Narratives</p>
-</header>
+
+<p>AI Visual Storytelling • Cinematic Experiments • Future Advertising</p>
+
+</div>
 
 <section>
 
 <h2>About</h2>
 
 <p>
-Senior graphic designer transitioning into AI filmmaking and visual storytelling.
-Exploring cinematic narratives, experimental advertising and generative creativity.
+Senior graphic designer evolving into an AI visual storyteller.
+Exploring cinematic narratives, generative art and experimental advertising using AI tools.
 </p>
 
 </section>
 
 <section>
 
-<h2>AI Film Projects</h2>
+<h2>AI Film Experiments</h2>
 
-<div class="project">
+<div class="projects">
+
+<div class="card">
 <h3>Future Memory</h3>
-<p>A short cinematic AI film exploring memories stored in machines.</p>
+<p>A cinematic AI short film about memory and machines.</p>
 </div>
 
-<div class="project">
+<div class="card">
 <h3>Luxury Fragrance Concept</h3>
-<p>An AI-generated advertising concept for a luxury perfume brand.</p>
+<p>AI generated ad film for a luxury perfume campaign.</p>
+</div>
+
+<div class="card">
+<h3>Dream Archive</h3>
+<p>Visual storytelling experiment created using generative AI.</p>
+</div>
+
 </div>
 
 </section>
 
 <section>
 
-<h2>Contact</h2>
+<h2>Creative Vision</h2>
 
-<p>Open for collaborations with startups, founders and creative teams.</p>
+<p>
+Building a new generation creative studio exploring storytelling through artificial intelligence.
+</p>
 
 </section>
+
+<footer>
+
+<p>Open for collaborations with founders, startups and creative teams.</p>
+
+</footer>
 
 </body>
 </html>
