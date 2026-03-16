@@ -8,8 +8,8 @@
 
 body{
 margin:0;
-font-family:Arial;
-background:#0b0b0b;
+font-family:Helvetica,Arial;
+background:#050505;
 color:white;
 }
 
@@ -20,47 +20,75 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:linear-gradient(to bottom,#000,#111);
+background:radial-gradient(circle at center,#111,#000);
 }
 
 .hero h1{
-font-size:60px;
-letter-spacing:2px;
+font-size:70px;
+letter-spacing:4px;
 }
 
 .hero p{
 font-size:20px;
-opacity:0.8;
+opacity:0.7;
+margin-top:10px;
 }
 
-section{
-padding:80px 20px;
-max-width:1000px;
-margin:auto;
-}
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-.card{
-background:#141414;
-padding:25px;
-border-radius:10px;
+.btn{
+margin-top:30px;
+padding:12px 30px;
+border:1px solid white;
+color:white;
+text-decoration:none;
 transition:0.3s;
 }
 
-.card:hover{
-transform:scale(1.05);
-background:#1c1c1c;
+.btn:hover{
+background:white;
+color:black;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:90px 20px;
+}
+
+h2{
+font-size:36px;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.project{
+background:#111;
+border-radius:10px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-5px);
+}
+
+.project img{
+width:100%;
+display:block;
+}
+
+.project-info{
+padding:20px;
 }
 
 footer{
 text-align:center;
-padding:40px;
-opacity:0.7;
+padding:60px;
+opacity:0.6;
 }
 
 </style>
@@ -73,7 +101,9 @@ opacity:0.7;
 
 <h1>Aparna Creative AI</h1>
 
-<p>AI Visual Storytelling • Cinematic Experiments • Future Advertising</p>
+<p>AI Storytelling • Experimental Cinema • Generative Advertising</p>
+
+<a href="#films" class="btn">View Projects</a>
 
 </div>
 
@@ -82,31 +112,40 @@ opacity:0.7;
 <h2>About</h2>
 
 <p>
-Senior graphic designer evolving into an AI visual storyteller.
-Exploring cinematic narratives, generative art and experimental advertising using AI tools.
+I am a senior graphic designer transitioning into AI-driven storytelling and cinematic experimentation.
+My work explores how generative AI can transform advertising, film and visual narratives.
 </p>
 
 </section>
 
-<section>
+<section id="films">
 
 <h2>AI Film Experiments</h2>
 
-<div class="projects">
+<div class="grid">
 
-<div class="card">
+<div class="project">
+<img src="https://picsum.photos/400/250?1">
+<div class="project-info">
 <h3>Future Memory</h3>
-<p>A cinematic AI short film about memory and machines.</p>
+<p>A speculative short film about memories stored in machines.</p>
+</div>
 </div>
 
-<div class="card">
+<div class="project">
+<img src="https://picsum.photos/400/250?2">
+<div class="project-info">
 <h3>Luxury Fragrance Concept</h3>
-<p>AI generated ad film for a luxury perfume campaign.</p>
+<p>AI-generated advertisement exploring surreal fashion storytelling.</p>
+</div>
 </div>
 
-<div class="card">
+<div class="project">
+<img src="https://picsum.photos/400/250?3">
+<div class="project-info">
 <h3>Dream Archive</h3>
-<p>Visual storytelling experiment created using generative AI.</p>
+<p>An AI visual narrative created from generative image sequences.</p>
+</div>
 </div>
 
 </div>
@@ -115,17 +154,17 @@ Exploring cinematic narratives, generative art and experimental advertising usin
 
 <section>
 
-<h2>Creative Vision</h2>
+<h2>Studio Vision</h2>
 
 <p>
-Building a new generation creative studio exploring storytelling through artificial intelligence.
+My goal is to build a new kind of creative studio focused on AI-native storytelling, experimental advertising and cinematic generative art.
 </p>
 
 </section>
 
 <footer>
 
-<p>Open for collaborations with founders, startups and creative teams.</p>
+<p>Open for collaboration with startups, brands and creative teams.</p>
 
 </footer>
 
